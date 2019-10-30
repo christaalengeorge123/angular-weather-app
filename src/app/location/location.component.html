@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Angular DropDownList</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript Toolbar Controls" />
+    <meta name="author" content="Syncfusion" />
+    
+    <link href="//cdn.syncfusion.com/ej2/ej2-dropdowns/styles/material.css" rel="stylesheet" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.6.25/zone.min.js"></script>
+    <script src="https://unpkg.com/reflect-metadata@0.1.3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+        <div id="wrapper" style='margin-top: 20px'>
+                <div id='content' style="margin: 50px auto 0; width:250px;">
+    
+            <br>
+                <ejs-dropdownlist #country id="country" [dataSource]="countryData" [fields]="countryFields" (change)="countryChange()" [placeholder]="countryWatermark"></ejs-dropdownlist>
+            <div class="padding-top">
+                <ejs-dropdownlist #state id="state" [dataSource]="stateData" [fields]="stateFields" (change)="stateChange()" [placeholder]="stateWatermark" [enabled]="false"></ejs-dropdownlist>
+            </div>  
+            <div class="padding-top">
+                <ejs-dropdownlist #city id="city" [dataSource]="cityData" [fields]="cityFields" [placeholder]="cityWatermark" [enabled]="false"></ejs-dropdownlist>
+            </div> 
+                </div>
+        </div>    
+      
+
+
+<section class="section">
+<div class="container">
+
+<!-- form goes here -->
+
+
+<form (ngSubmit)="processForm()">
+
+<!-- Zip Code -->
+
+<button type="submit" class="button is-danger is-large">Submit</button>
+
+</form>
+<p></p>
+<p>{{ valueHere }}</p>
+<p>{{ valueHere1 }}</p>
+<p>{{ humidity }}</p>
+<p>{{ cityname }}</p>
+</div>
+</section>
+</body>
+</html>

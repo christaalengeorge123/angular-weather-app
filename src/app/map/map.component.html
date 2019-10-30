@@ -1,0 +1,25 @@
+
+<agm-map [latitude]="lat" [longitude]="lng">
+<agm-marker [latitude]="lat"[longitude]="lng"></agm-marker>
+</agm-map>
+
+<section class="section">
+    <div class="container">
+    
+    <!-- form goes here -->
+    
+    
+    <form (ngSubmit)="processForm()">
+    
+    <!-- Zip Code -->
+    
+    <button type="submit" class="button is-danger is-large">Get Weather</button>
+    
+    </form>
+    <p></p>
+    <p>{{ temperature }}</p>
+    <p>{{ weather }}</p>
+    <p>{{ humidity }}</p>
+    <p>{{ cityname }}</p>
+    </div>
+    </section>

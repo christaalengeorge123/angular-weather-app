@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "/home/christa/IdeaProjects/my-angular-site/node_modules/bulma/css/bulma.css",
               "src/styles.scss"
             ],
             "scripts": []
